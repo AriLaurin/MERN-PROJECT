@@ -25,7 +25,8 @@ const Home = () => {
     }
 
     useEffect(() => {
-        console.log("yuh");
+        console.log(`Person Opplysning Oppdatert`);
+        console.log(folk);
     }, [folk]); // folk is a dependency, so useEffect only runs on intial load, and when folk is updated
 
     return (
