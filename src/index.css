@@ -74,6 +74,13 @@ body{
   padding: 2em;
 }
 
+.buttondiv{
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 button{
   color: #333138;
   font-weight: 600;
@@ -86,4 +93,31 @@ button{
 
 button:hover{
   transform: scale(1.1);
+}
+
+.folk-preview{
+  padding: 0.5em;
+  background-color: #FCD757;
+  margin: 1em;
+  border-radius: 1.5em;
+  box-shadow:  2px 2px 15px #000000;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+.folk-preview:hover{
+  margin: 2em;
+}
+
+.folk-preview > h2 {
+  color:#333138;
+}
+
+
+.home > h1 {
+  text-align: center;
+}
+
+.folk-container > h1 {
+  text-align: center;
 }
