@@ -5,7 +5,7 @@ module.exports.home_get = async (req,res) => {
     try{
         const person = await Person.find({});
         res.status(200).json(person)
-        console.log(person);
+        // console.log(person);
     }catch(err){
         console.log(err);
     }
