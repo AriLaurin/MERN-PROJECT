@@ -26,7 +26,8 @@ const Home = () => {
         }
 
         fetchPersoner()
-    }, [dispatch]) //empty array is a param we can say so UseEffect only runs once
+    }, [dispatch]) //empty array is a param we can say so UseEffect only runs once, with Dispatch in here, it will also run when dispatch is used
+
 
     return (
         <div className="home">

@@ -15,6 +15,10 @@ export const personReducer = (state,action) => { //state is the previous value b
             return{
                 personer: [action.payload, ...state.personer] //adding payload into an array and spreading it into a new array
             }
+            case "DELETE_PERSON":
+                return{
+                    personer: state.personer.filter((p) => p._id !== action.payload._id)
+                }
             default: //if none of the cases match, return no changes
                 return state
     }
