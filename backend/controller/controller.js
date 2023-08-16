@@ -61,13 +61,13 @@ module.exports.home_get = async (req,res) => {
 
     try{
         if(!mongoose.Types.ObjectId.isValid(id)){
-            return res.status(404).json({error: "Den brukeren finnes ikke"})
+            return res.status(404).json({error: "brukeren finnes ikke"})
         }
 
         const person = await Person.findOneAndDelete({_id: id})
 
         if(!person){
-            return res.status(404).json({error: "Den brukeren finnes ikke"})
+            return res.status(404).json({error: "brukeren finnes ikke"})
         }
 
         res.status(200).json(person)
